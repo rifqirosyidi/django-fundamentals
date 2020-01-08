@@ -4,4 +4,11 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return render(request, 'accounts/login.html')
+    numbers = [29, 89, 3, 32, 22, 1]
+    name = "Table"
+    context = {
+        'name': name,
+        'numbers': numbers
+    }
+
+    return render(request, 'accounts/login.html', context)
