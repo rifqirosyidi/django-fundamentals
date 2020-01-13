@@ -11,4 +11,4 @@ def home(request):
         'numbers': numbers
     }
 
-    return render(request, 'accounts/login.html', context)
+    return render(request, 'accounts/home.html', context)
